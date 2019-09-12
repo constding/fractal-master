@@ -4,7 +4,7 @@ In this tutorial, you will learn how to:
 
 - Install Fractal Applications on macOS and Linux(Centos,Ubuntu,Amazon)
 - Create your account
-- Deploy node without mining on Fractal Testnet
+- Deploy non-miner node on Fractal Testnet
 - Deploy miner node on Fractal Testnet
 - Send transactions on Fractal Testnet
 
@@ -43,11 +43,11 @@ Install Steps
         0.2.0-stable-6d38644
         Install fractal success.
 
-If you get VERSION in terminal, it means that your installation is OK.
+If you get VERSION in terminal, it means that your installation is successful.
 
 Create your account
 ------------------------------------------
-You can create your account in two ways:
+You can create account in two ways:
 
 * Use gtool command line. Run these commands in terminal: 
 
@@ -63,13 +63,13 @@ You can create your account in two ways:
     New Packer Key Address: 0xb22739bbea639879341cb299eb434da6034b4a93
     New Packer Public Key: 0x04d3d97a0985c8321fcd56cf43182fc36dece5565e6088f61edf2358c9bdb4068b58c724edf4a1063662fc2bf0f45001673d913de5475d62418e682c2f0f2c5dc5
 
-Then you can get your <New Account Key Address> in terminal output.
+Then you can get your <New Account Key Address> from terminal output.
 
 .. hint::
     | **Parameter `--pass [password]`** is used to protect your private keys. 
     | Visit `here <../refs/gtool.html>`_ for more information about gtool command line tool.
 
-You can export your private key, so it can be imported to Wallet Application. Run these commands in terminal: 
+You can export your private key, so it can be later imported into Wallet Application. Run these commands in terminal:
 
 .. code-block:: console
 
@@ -78,17 +78,17 @@ You can export your private key, so it can be imported to Wallet Application. Ru
     Account Address: 0xb22739bbea639879341cb299eb434da6034b4a93
     Account Private Key: 0x658f7e50dfba35e86daae1a3ce2d14f8bbaffe02169936a3a597548ca98d5099
 
-Then you can get your <Account Private Key> in terminal output.
+Then you can get your <Account Private Key> from terminal output.
 
 * Use Fractal Wallet Application
 
 Visit https://github.com/fractal-platform/pihsiu for more information about fractal wallet.
 
-How to Get Stake on Fractal Testnet
+How to Raise Stake on Fractal Testnet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-You can get stake in two ways:
+You can obtain stake in two ways:
 
-* Request stake in the website: http://token.fractalblock.com:8081.
+* Request stake from the website: http://token.fractalblock.com:8081.
 * Ask your friend to transfer stake to you.
 
 How to Check Your Stake on Fractal Testnet
@@ -113,7 +113,7 @@ Then you can get your account balance in terminal output.
     | **Parameter `--addr [account address]`** is the account address produced when you create your account. 
     | Visit `here <../refs/gtool.html>`_ for more information about gtool command line tool.
 
-Deploy node without mining
+Deploy non-miner node
 ------------------------------------------
 .. note::
     If you have already started gftl program, you must use Ctrl+C to interrupt it first.
@@ -226,7 +226,7 @@ Run these commands in terminal:
 .. hint:: 
     | **Parameter `--rpc [rpc address]`** should be set to RPC server address on Fractal Testnet, `http://52.82.13.37:8545` is one of Fractal Testnet Node, and here is the `rpc address list <../refs/rpclist.html>`_. 
     | **Parameter `--pass [password]`** the password when you create your account. 
-    | **Parameter `--to [account address]`** is the account address you want to transfer to. 
+    | **Parameter `--to [account address]`** is the recipient account address.
     | **Parameter `--value [value]`** is the token amount(unit: nFRA) you want to transfer. 
     |     There are two units for token, FRA and nFRA ( FRA = nFRA * 10\ :sup:`9`)
     | **Parameter `--chainid [chainid]`** is the chain id, uses 2 for testnet. 
